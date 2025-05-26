@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="javasc.js" defer></script>
+</head>
+<body>
+  <header>
+    <h3>En Garde!</h3>
+    <img id="logo" src="logo.png" alt="Logo">
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+  
+
+  <video id="background-video" class="background-video" autoplay loop muted>
+    <source src="sm.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="intro-section" class="section">
+    <h2>The Art of Fencing</h2>
+    <p>Fencing in the way of the 1800</p>
+  </div>
+
+  <div id="art-of-fencing" class="image-and-text-container">
+    <div class="text-container">
+      <h2>The Art of Fencing</h2>
+      <p>Fencing is more than just a sport; it's a tradition that dates back to the 1800s. Embrace the elegance and precision of this timeless art.</p>
+     
+    </div>
+    
+    <div class="image-container">
+      
+      <div class="image-box">
+        <img src="ft1.jpg" alt="Image 2" class="image">
+        <div class="overlay">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const video = document.getElementById('background-video');
+      
+      if (window.scrollY > 0) {
+        video.style.position = 'absolute';
+      } else {
+        video.style.position = 'fixed';
+      }
+    });
+  </script>
+
+  <div id="image-gallery">
+    <div class="image-overlay" data-text="Fencing: The Art of Speed and Precision">
+        <img src="i1.jpg" alt="Fencing Image 1">
+    </div>
+    <div class="image-overlay" data-text="Footwork is the Key to Fencing Success">
+        <img src="im2.jpg" alt="Fencing Image 2">
+    </div>
+    <div class="image-overlay" data-text="Strategy and Reflexes Make a Great Fencer">
+        <img src="im3.jpg" alt="Fencing Image 3">
+    </div>
+    <div class="image-overlay" data-text="Fencing is Chess at the Speed of Light">
+        <img src="im4.jpg" alt="Fencing Image 4">
+    </div>
+</div>
+
+  
+  
+  <img id="app-image" src="app.jpg" alt="app img">
+  <h1 id="tagline">A place for all ages and skill levels</h1>
+
+  <div id="features" class="container">
+    <div class="features-wrapper"> 
+      <div class="content">
+        <img src="loc.png" alt="Icon for fencing experience" class="feature-icon">
+        <h2>The best fencing experience in town</h2>
+        <h4>We combine expert coaching, top-tier facilities, and a supportive community to help you thrive.</h4>
+        <a href="#">Learn More</a>
+      </div>
+  
+      <div class="content">
+        <img src="dres.png" alt="Icon for equipment" class="feature-icon">
+        <h2>State-of-the-art equipment</h2>
+        <h4>Our fencing halls are equipped with the latest gear and technology to enhance your performance.</h4>
+        <a href="#">Learn More</a>
+      </div>
+  
+      <div class="content">
+        <img src="com.png" alt="Icon for community" class="feature-icon">
+        <h2>Join a community of champions</h2>
+        <h4>With passionate instructors and fellow fencers, you'll feel like part of the family from day one.</h4>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="i1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="im2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="im3.jpg" style="width:100%">
+    </div>
+  
+    
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+  
+    
+  
+
+  <div id="signup-section" class="content">
+    <div class="text-container">
+      <h1>Sign Up and Start Earning Rewards!</h1>
+      <h4>
+        Joining our fencing community is more than just becoming a member – it’s your first step toward earning exclusive rewards! Sign up today and unlock access to special offers, training sessions, and merchandise.
+      </h4>
+     
+    </div>
+    <div class="image-container">
+      <img src="sig.jpg" alt="Sign Up Image">
+    </div>
+  </div>
+  
+  
+
+  <footer id="main-footer" class="footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h2>About En Garde</h2>
+        <p>
+          En Garde is dedicated to fostering the art of fencing. Whether you're a beginner or a seasoned athlete, we provide the resources, training, and community to help you excel in this timeless sport.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@engarde.com</p>
+        <p>Phone: +355 123 456 789</p>
+        <p>Location: Tirana, Albania</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 En Garde. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
